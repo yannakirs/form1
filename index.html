@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <form action="" class="card1">
+            
+            <label>
+                <div class="bank">
+                Название банка:
+                  <select name="bank" required>
+                      <option value="СберБанк" selected>СберБанк</option>
+                      <option value="ВТБ">ВТБ</option>
+                      <option
+                      value="Газпромбанк">Газпромбанк</option>
+                      <option
+                      value="Альфа Банк">Альфа Банк</option>
+                      <option
+                      value="Тинькофф Банк">Тинькофф Банк</option>
+                    </select>
+                </div>
+                </label><br>
+            
+              <label>
+                <div class="number">
+                Номер карты:
+                <input type="text" name="number" id="number"  required>
+            </div>
+               </label><br>
+
+            
+            
+             <label>
+                <div class="name">
+                Ваше имя:
+                <input type="text" name="name" id="name" placeholder="Vasya Pupkin" required >
+                </div>
+              </label><br>
+            
+              
+              <label>
+                <div class="month">
+                Месяц и год окончания карты:
+                <input type="month" name="month" required>
+                </div>
+              </label><br>
+
+              
+
+              <label>
+                <div class="system">
+                Тип платежной системы:
+                  <select name="system" required>
+                      <option value="VISA" selected>VISA</option>
+                      <option value="MasterCard">MasterCard</option>
+                      <option value="Мир">МИР</option>
+                    </select>
+                </div>
+                </label> <br>
+            
+            
+              <button type="submit">Отправить заявку</button>
+              <button type="reset">Очистить</button> 
+            </form>
+     </div>
+            <div class="card2"> 
+                <div class="bank_card"></div>
+                <div class="number_card"></div>
+                <div class="system_card"></div>
+                <div class="mm_card"></div> 
+                <div class="name_card"></div>
+            </div>
+            <div class="finish">
+                <h1>Данные:</h1>
+      </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
